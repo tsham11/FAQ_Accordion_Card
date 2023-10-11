@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main {
+  width: 327px;
+  min-height: 535px;
+  border-radius: 23px;
+  background: #FFF;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.50);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  margin-top: 148px;
+  margin-bottom: 68px;
+}
+
+.imgs {
+  width: 237px;
+  height: 212px;
+  position: absolute;
+  top: 40px;
+}
+
+#woman {
+  width: 237px;
+  height: 180px;
+  background-image: url("./images/illustration-woman-online-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 237px 180px;
+}
+
+#pattern {
+  width: 240px;
+  height: 110px;
+  background-image: url("./images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  bottom: 77px;
+}
+
+.content {
+  margin-top: 132px;
+}
+
+h1 {
+  color: #1E1F36;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 38px;
+  text-align: center;
+}
+
+.faq {
+  width: 279px;
+  height: 34px;
+  border-bottom: 1px solid #E8E8EA;
+  margin-bottom: 19px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  color: #4B4C5F;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+p {
+  color: #787887;
+  font-size: 12px;
+  line-height: 18px;
+  width: 279px;
+}
+
+.answer {
+  display: none;
+  margin: 13px 0 16px;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.bold {
+  color: #1E1F36;
+  font-weight: 700;
+}
+
+@media screen and (min-width:1440px) {
+  body {
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .main {
+    width: 920px;
+    min-height: 539px;
+    border-radius: 23px;
+    background: #FFF;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.50);
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .imgs {
+    width: 472px;
+    height: 439px;
+    position: relative;
+    right: 87px;
+  }
+
+  #woman {
+    width: 472px;
+    height: 359px;
+    background-size: 472px 359px;
+  }
+
+  #pattern {
+    width: 600px;
+    height: 600px;
+    background-size: 600px 600px;
+    right: 125px;
+    bottom: 290px;
+  }
+
+  .content {
+    margin: 0 0 0 476px;
+    position: absolute;
+  }
+
+  h1 {
+    text-align: start;
+    margin-bottom: 27px;
+  }
+
+  .faq {
+    width: 350px;
+    height: 35px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  h3:hover {
+    color: #F47B56;
+  }
+
+  p {
+    width: 319px;
+  }
+}
